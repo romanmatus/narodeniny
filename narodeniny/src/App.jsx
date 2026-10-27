@@ -68,13 +68,13 @@ function App() {
   const gallery = useMemo(() => {
     const ordered = galleryOrder.map((name) => byName(currentPhotos, name)).filter(Boolean)
     const remaining = Object.entries(currentPhotos)
-      .filter(([path]) => !path.includes('poster.png') && !path.includes('birthday-sky') && !galleryOrder.some((name) => path.includes(name)))
+      .filter(([path]) => !path.includes('poster.png') && !path.includes('birthday-sky') && !path.includes('hero-portrait') && !galleryOrder.some((name) => path.includes(name)))
       .map(([, src]) => src)
     return [...ordered, ...remaining]
   }, [])
   const kids = useMemo(() => Object.values(childhoodPhotos), [])
   const poster = byName(currentPhotos, 'poster.png')
-  const hero = byName(currentPhotos, 'IMG_1575')
+  const hero = byName(currentPhotos, 'hero-portrait')
   const heroTwo = byName(currentPhotos, 'IMG_1954')
   const busPhoto = byName(childhoodPhotos, 'IMG_1336')
   const birthdaySky = byName(currentPhotos, 'birthday-sky')
@@ -122,10 +122,10 @@ function App() {
         <div className="relative mx-auto w-full max-w-xl text-center">
           <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.38em] text-[#8f5365] sm:mb-6 sm:text-[11px] sm:tracking-[0.5em]">Od bubáčka k narodeninkám</p>
           <div className="relative mx-auto mb-7 h-32 w-32 rounded-full border border-[#c9889a]/50 p-2 sm:h-44 sm:w-44">
-            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_28%]" />
+            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_30%]" />
             <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-display text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
           </div>
-          <h1 className="font-display text-5xl leading-none min-[380px]:text-6xl sm:text-8xl">Pre Bubáčka</h1>
+          <h1 className="font-kalam text-5xl font-normal leading-tight min-[380px]:text-6xl sm:text-8xl">Pre Bubáčka</h1>
           <button onClick={openLetter} className="group mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#712f46] px-6 py-3.5 text-sm font-medium text-white shadow-[0_16px_40px_rgba(113,47,70,.22)] transition hover:-translate-y-1 hover:bg-[#8d3f59] focus:outline-none focus:ring-4 focus:ring-[#c98fa1] sm:mt-9 sm:px-7 sm:py-4">
             Prekvápko
             <Heart size={16} className="transition group-hover:scale-125 group-hover:fill-white" />
@@ -261,7 +261,7 @@ function App() {
             <h2 className="font-display text-5xl leading-[.95] min-[390px]:text-6xl sm:text-8xl">
               Takto vyzerá <br className="hidden sm:block"/> tvoja obloha
             </h2>
-            <p className="handwritten mt-5 text-2xl text-[#e7b7c5] sm:text-4xl">No moja najkrajšia hviezdička si aj tak ty ♡</p>
+            <p className="handwritten mt-5 text-2xl text-[#e7b7c5] sm:text-4xl">No moja najkrajší hviezdička si aj tak ty ♡</p>
           </div>
 
           <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-[1.5rem] bg-black shadow-[0_35px_100px_rgba(0,0,0,.65)] sm:rounded-[2.5rem]">
