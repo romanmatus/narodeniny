@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.preview/
+*.log
+
+# Zdrojové médiá, ktoré finálna stránka nepoužíva.
+# Ostávajú lokálne, ale neposielajú sa zbytočne do GitHub repozitára.
+fotky/*.MOV
+nalepky/*
+!nalepky/29EC708E-523F-462E-B8C5-A96F1646F266.png
+!nalepky/56A73958-DEC0-42B7-8E32-A1E7C787DD39.png
+!nalepky/5722C620-60B3-49FE-8B51-597830081CC9.png
+!nalepky/9CAB8B06-45F5-430E-866B-B0F2CCCC5562.png
+!nalepky/AF789D95-924D-41B7-AF54-B0F8A9E6707E.png
+!nalepky/B22534CC-9C44-4A53-8FE9-69E8E482A8FE.png
+!nalepky/baby-heart-transparent.png
+!nalepky/no-18-sign.png
+!nalepky/D1EB43E0-661F-47A3-A333-F31E0D3003CA.png
+!nalepky/F2158E3C-551D-43CC-9377-6D8F624262B7.png
+!nalepky/little-emmka-pink-transparent.png
+!nalepky/BF04E6F9-C1CC-43C4-B653-B91A857DA635.png

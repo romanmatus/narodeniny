@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: #381f26;
+  background: #f8f1ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.font-display { font-family: "Cormorant Garamond", Georgia, serif; }
+.handwritten,
+.signature { font-family: "Caveat", cursive; }
+.font-kalam { font-family: "Kalam", cursive; }
+
+.halloween-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(238, 132, 70, .18), transparent 25%),
+    radial-gradient(circle at 88% 72%, rgba(169, 78, 126, .24), transparent 28%),
+    linear-gradient(135deg, #160f1c 0%, #2b1529 52%, #1b101e 100%);
+}
+
+.halloween-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .28;
+  background-image:
+    radial-gradient(circle, #ffd6a0 1px, transparent 1.5px),
+    radial-gradient(circle, #f3b9d2 1px, transparent 1.5px);
+  background-position: 0 0, 31px 44px;
+  background-size: 76px 76px, 93px 93px;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .18;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
