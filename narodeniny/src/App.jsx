@@ -121,8 +121,8 @@ function App() {
         <Sticker name="B22534CC" className="absolute left-1 top-[42%] hidden w-20 rotate-[-8deg] opacity-75 drop-shadow-lg min-[430px]:block sm:left-[5%] sm:w-24 lg:left-[20%]" />
         <div className="relative mx-auto w-full max-w-xl text-center">
           <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.38em] text-[#8f5365] sm:mb-6 sm:text-[11px] sm:tracking-[0.5em]">Od bubáčka k narodeninkám</p>
-          <div className="relative mx-auto mb-7 h-48 w-48 rounded-full border border-[#c9889a]/50 p-2 sm:h-44 sm:w-44">
-            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_5%]" />
+          <div className="relative mx-auto mb-7 h-42 w-42 rounded-full border border-[#c9889a]/50 p-2 sm:h-72 sm:w-72">
+            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_0%]" />
             <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-display text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
           </div>
           <h1 className="font-kalam text-5xl font-normal leading-tight min-[380px]:text-6xl sm:text-8xl">Pre Bubáčka</h1>
