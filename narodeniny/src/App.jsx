@@ -45,7 +45,7 @@ const byName = (collection, name) =>
 const reasons = [
   ['01', 'Tvoj úsmev', 'Lebo je nádherný, pls pls pls použivaj ho čo najviac'],
   ['02', 'Tvoj pohľad', 'Lebo z neho viem vyčítať viac než Raffaelo (viac než tisíc slov) '],
-  ['03', 'Tvoje srdce', 'Lebo v sebe nosíš viac dobroty a lásky, než si ktokolvek zasluži dostať (ja) '],
+  ['03', 'Tvoje srdíčko', 'Lebo v sebe nosíš viac dobroty a lásky, než si ktokolvek zasluži dostať (ja) '],
 ]
 
 const galleryOrder = [
@@ -122,7 +122,7 @@ function App() {
         <div className="relative mx-auto w-full max-w-xl text-center">
           <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.38em] text-[#8f5365] sm:mb-6 sm:text-[11px] sm:tracking-[0.5em]">Od bubáčka k narodeninkám</p>
           <div className="relative mx-auto mb-7 h-48 w-48 rounded-full border border-[#c9889a]/50 p-2 sm:h-44 sm:w-44">
-            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_30%]" />
+            <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_5%]" />
             <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-display text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
           </div>
           <h1 className="font-kalam text-5xl font-normal leading-tight min-[380px]:text-6xl sm:text-8xl">Pre Bubáčka</h1>
