@@ -121,7 +121,7 @@ function App() {
         <Sticker name="B22534CC" className="absolute left-1 top-[42%] hidden w-20 rotate-[-8deg] opacity-75 drop-shadow-lg min-[430px]:block sm:left-[5%] sm:w-24 lg:left-[20%]" />
         <div className="relative mx-auto w-full max-w-xl text-center">
           <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.38em] text-[#8f5365] sm:mb-6 sm:text-[11px] sm:tracking-[0.5em]">Od bubáčka k narodeninkám</p>
-          <div className="relative mx-auto mb-7 h-32 w-32 rounded-full border border-[#c9889a]/50 p-2 sm:h-44 sm:w-44">
+          <div className="relative mx-auto mb-7 h-48 w-48 rounded-full border border-[#c9889a]/50 p-2 sm:h-44 sm:w-44">
             <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_30%]" />
             <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-display text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
           </div>
@@ -141,10 +141,10 @@ function App() {
           <span className="text-[10px] font-semibold uppercase tracking-[0.32em]">kapitola XVIII</span>
         </nav>
 
-        <div className="relative mx-auto grid min-h-[calc(100vh-90px)] max-w-[1500px] items-center gap-5 py-10 sm:gap-8 sm:py-14 lg:grid-cols-[1.05fr_.95fr]">
-          <div className="relative z-10 lg:pl-[5vw]">
+        <div className="relative mx-auto grid min-h-[calc(100vh-90px)] max-w-[1500px] items-center gap-8 py-10 sm:gap-12 sm:py-14 xl:grid-cols-[1.05fr_.95fr] xl:gap-8">
+          <div className="relative z-10 xl:pl-[5vw]">
             <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.3em] text-[#9b5067] sm:text-xs sm:tracking-[0.38em]">31 · 10 · 2026</p>
-            <h2 className="font-display text-[clamp(4.2rem,21vw,13rem)] leading-[.72] tracking-[-.075em]">
+            <h2 className="font-display text-[clamp(4.2rem,18vw,11rem)] leading-[.72] tracking-[-.075em] xl:text-[clamp(7rem,11vw,11rem)]">
               EM<span className="italic text-[#a44662]">M</span>INKA
             </h2>
             <p className="handwritten mt-2 ml-2 rotate-[-2deg] text-2xl text-[#8d3f59] min-[380px]:text-3xl sm:ml-14 sm:text-5xl">Ty moja malá bubinka</p>
@@ -168,7 +168,7 @@ function App() {
             <Sticker name="baby-heart-transparent" className="absolute -right-6 top-[4%] w-24 rotate-12 drop-shadow-xl sm:-right-12 sm:w-40" />
             <Sticker name="no-18-sign" className="absolute right-[2%] top-[48%] h-20 w-20 rotate-12 object-contain drop-shadow-xl sm:h-28 sm:w-28" />
           </div>
-          <a href="#pribeh" aria-label="Pokračovať nižšie" className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 animate-bounce lg:block"><ArrowDown size={22} /></a>
+          <a href="#pribeh" aria-label="Pokračovať nižšie" className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 animate-bounce xl:block"><ArrowDown size={22} /></a>
         </div>
       </section>
 
