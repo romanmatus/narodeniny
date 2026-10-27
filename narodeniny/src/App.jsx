@@ -123,7 +123,7 @@ function App() {
           <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.38em] text-[#8f5365] sm:mb-6 sm:text-[11px] sm:tracking-[0.5em]">Od bubáčka k narodeninkám</p>
           <div className="relative mx-auto mb-7 h-42 w-42 rounded-full border border-[#c9889a]/50 p-2 sm:h-72 sm:w-72">
             <img src={hero} alt="Emmka" className="h-full w-full rounded-full object-cover object-[50%_0%]" />
-            <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-display text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
+            <span className="absolute -bottom-3 -right-5 grid h-16 w-16 place-items-center rounded-full bg-[#8d3f59] font-kalam text-4xl font-semibold text-white shadow-xl sm:h-20 sm:w-20 sm:text-5xl">18</span>
           </div>
           <h1 className="font-kalam text-5xl font-normal leading-tight min-[380px]:text-6xl sm:text-8xl">Pre Bubáčka</h1>
           <button onClick={openLetter} className="group mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#712f46] px-6 py-3.5 text-sm font-medium text-white shadow-[0_16px_40px_rgba(113,47,70,.22)] transition hover:-translate-y-1 hover:bg-[#8d3f59] focus:outline-none focus:ring-4 focus:ring-[#c98fa1] sm:mt-9 sm:px-7 sm:py-4">
@@ -144,7 +144,7 @@ function App() {
         <div className="relative mx-auto grid min-h-[calc(100vh-90px)] max-w-[1500px] items-center gap-8 py-10 sm:gap-12 sm:py-14 xl:grid-cols-[1.05fr_.95fr] xl:gap-8">
           <div className="relative z-10 xl:pl-[5vw]">
             <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.3em] text-[#9b5067] sm:text-xs sm:tracking-[0.38em]">31 · 10 · 2026</p>
-            <h2 className="font-display text-[clamp(4.2rem,18vw,11rem)] leading-[.72] tracking-[-.075em] xl:text-[clamp(7rem,11vw,11rem)]">
+            <h2 className="font-kalam text-[clamp(4.2rem,18vw,11rem)] font-normal leading-[.82] tracking-[-.04em] xl:text-[clamp(7rem,11vw,11rem)]">
               EM<span className="italic text-[#a44662]">M</span>INKA
             </h2>
             <p className="handwritten mt-2 ml-2 rotate-[-2deg] text-2xl text-[#8d3f59] min-[380px]:text-3xl sm:ml-14 sm:text-5xl">Ty moja malá bubinka</p>
@@ -156,7 +156,7 @@ function App() {
           <div className="relative mx-auto h-[500px] w-full max-w-[620px] min-[400px]:h-[560px] sm:h-[700px]">
             <div className="absolute left-[1%] top-[7%] h-[50%] w-[96%] rotate-[-2deg] bg-white p-3 pb-14 shadow-[0_25px_80px_rgba(73,36,47,.2)] sm:p-5 sm:pb-16">
               <img src={poster} alt="Všetko najlepšie k narodeninám, Emmka" className="h-full w-full object-cover object-center" />
-              <span className="absolute bottom-4 left-6 font-display text-xl font-medium italic sm:text-2xl">Moja oslávenkyňa ♡</span>
+              <span className="absolute bottom-4 left-6 font-kalam text-xl font-normal italic sm:text-2xl">Moja oslávenkyňa ♡</span>
             </div>
             <div className="absolute bottom-[2%] right-[1%] h-[44%] w-[52%] rotate-[6deg] bg-[#efe0dc] p-2 pb-11 shadow-2xl sm:right-[3%] sm:w-[46%] sm:p-3 sm:pb-14">
               <img src={busPhoto} alt="Malá Emmka v autobuse" className="h-full w-full object-cover object-[63%_50%]" />
@@ -178,7 +178,7 @@ function App() {
           <div className="mb-10 flex flex-col justify-between gap-5 border-b border-white/20 pb-8 sm:mb-14 sm:gap-6 sm:pb-10 md:flex-row md:items-end">
             <div>
               <p className="mb-4 text-[10px] uppercase tracking-[.38em] text-[#daa4b3]">kde sa to celé začalo</p>
-              <h2 className="font-display text-5xl leading-none min-[380px]:text-6xl sm:text-8xl">Malá Emminka</h2>
+              <h2 className="font-kalam text-5xl font-normal leading-none min-[380px]:text-6xl sm:text-8xl">Malá Emminka</h2>
             </div>
             <div className="flex items-center gap-3">
               <button aria-label="Predchádzajúce fotografie" onClick={() => kidsScroller.current?.scrollBy({ left: -380, behavior: 'smooth' })} className="grid h-11 w-11 place-items-center rounded-full border border-white/30 transition hover:bg-white hover:text-[#381f26]"><ChevronLeft size={20} /></button>
@@ -232,8 +232,8 @@ function App() {
             <Sticker name="F2158E3C" className="absolute -bottom-10 -left-8 w-32 rotate-[-8deg] drop-shadow-2xl sm:-bottom-16 sm:-left-20 sm:w-56" />
           </div>
           <div className="relative z-10 text-center lg:text-left">
-            <span className="font-display text-8xl leading-none text-[#f0a45f] sm:text-9xl">18</span>
-            <h2 className="-mt-5 font-display text-6xl leading-[.9] text-[#fff2df] sm:text-8xl">rokov<br/><i className="text-[#eaa3c5]">teba.</i></h2>
+            <span className="font-kalam text-8xl font-normal leading-none text-[#f0a45f] sm:text-9xl">18</span>
+            <h2 className="-mt-3 font-kalam text-6xl font-normal leading-[.9] text-[#fff2df] sm:text-8xl">rokov<br/><i className="text-[#eaa3c5]">teba.</i></h2>
             <p className="handwritten mt-8 text-2xl text-[#f6c9a0] sm:text-3xl">Občas strašidelná, ale stále krásna 🎃💖 </p>
           </div>
         </div>
@@ -258,10 +258,10 @@ function App() {
         <div className="relative mx-auto max-w-[1400px]">
           <div className="mx-auto mb-10 max-w-4xl text-center sm:mb-14">
             <p className="mb-5 text-[10px] font-semibold uppercase tracking-[.38em] text-[#dba4b4]">31 · 10 · 2026</p>
-            <h2 className="font-display text-5xl leading-[.95] min-[390px]:text-6xl sm:text-8xl">
+            <h2 className="font-kalam text-5xl font-normal leading-[1.05] min-[390px]:text-6xl sm:text-8xl">
               Takto vyzerá <br className="hidden sm:block"/> tvoja obloha
             </h2>
-            <p className="handwritten mt-5 text-2xl text-[#e7b7c5] sm:text-4xl">No moja najkrajší hviezdička si aj tak ty ♡</p>
+            <p className="handwritten mt-5 text-2xl text-[#e7b7c5] sm:text-4xl">No moja najkrajšia hviezdička si aj tak ty ♡</p>
           </div>
 
           <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-[1.5rem] bg-black shadow-[0_35px_100px_rgba(0,0,0,.65)] sm:rounded-[2.5rem]">
